@@ -6,6 +6,8 @@ import { MaterialModule } from '../material/material.module';
 import { GameComponent } from './pages/game/game.component';
 import { GameoverComponent } from './pages/gameover/gameover.component';
 import { PokemonViewComponent } from './components/pokemon-view/pokemon-view.component';
+import { IniciarSessioComponent } from './pages/iniciar-sessio/iniciar-sessio.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -13,12 +15,14 @@ import { PokemonViewComponent } from './components/pokemon-view/pokemon-view.com
   declarations: [
     GameComponent,
     GameoverComponent,
-    PokemonViewComponent
+    PokemonViewComponent,
+    IniciarSessioComponent
   ],
   imports: [
     CommonModule,
     GameRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class GameModule { }

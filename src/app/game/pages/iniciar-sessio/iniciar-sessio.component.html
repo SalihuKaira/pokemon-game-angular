@@ -1,0 +1,7 @@
+<form [formGroup]="formJugador"  class="formJugador" (ngSubmit)="jugar()">
+  <input class="controls" type="text" formControlName="name" id="nom">
+  <button mat-raised-button
+    color="primary"
+    routerLink="/game"
+    class="breath" (click)="jugar()">JUGAR</button>
+</form>
